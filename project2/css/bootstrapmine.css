@@ -25,8 +25,15 @@ body {
   background-color: #3292a6;
   color: red; }
 
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
 @media (max-width: 768px) {
   #showcase {
     min-height: 500px; }
     #showcase h1 {
-      font-size: 4rem; } }
+      font-size: 4rem; }
+  .mb-resp {
+    margin-bottom: 1rem; } }
