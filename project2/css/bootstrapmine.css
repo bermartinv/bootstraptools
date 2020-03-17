@@ -20,3 +20,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%; }
+
+.col-md-4.btn-primary {
+  background-color: #3292a6;
+  color: red; }
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 4rem; } }
