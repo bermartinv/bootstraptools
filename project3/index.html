@@ -41,11 +41,10 @@
             </ul>
         </div>
     </div>
-  </nav>
+</nav>
 
 <!-- SHOWCASE SLIDER -->
-
-  <section id="showcase">
+<section id="showcase">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class=""></li>
@@ -95,12 +94,128 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
-  </section>
+</section>
 
-<p>Hola</p>
+<!-- HOME ICONS -->
+<section id="home-icons">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-sm text-center">
+        <i class="fas fa-cart-plus"></i>
+        <h3 class="py-1">Turning Gears</h3>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.Libero, veniam.</p>
+      </div>
+      <div class="col-sm text-center">
+        <i class="fas fa-cloud"></i>
+        <h3 class="py-1">Sending Data</h3>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.Libero, veniam.</p>
+      </div>
+      <div class="col-sm text-center">
+        <i class="fas fa-cog"></i>
+        <h3 class="py-1">Making Money</h3>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.Libero, veniam.</p>
+      </div>
+    </div>
+  </div>
+</section>  
+
+<!-- HOME HEADING SECTION -->
+<section id="home-heading" class="p-5">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container pt-5 text-center">
+          <h1>Are you Ready To Get Started</h1>
+          <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus non recusandae, dolorum delectus eius in eos, debitis eligendi aliquid earum. Adipisci asperiores voluptates tempore perferendis aliquid porro libero assumenda?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO SECTION -->
+<section id="info-section" class="py-3">
+  <div class="container">
+    <div class="row py-5 d-flex flex-row flex-wrap align-content-center">
+      <div class="col-md-6 d-flex flex-column justify-content-center ">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quisquam reprehenderit. Reiciendis eaque hic eligendi corrupti possimus, et laboriosam nobis aperiam vel? Rem nihil eius dolorum ipsam corporis fuga corrupti.</p>
+        <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center flex-wrap">
+        <img class="image-labtop img-fluid" src="images/laptop.png" alt="laptop">
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- VIDEO PLAY -->
+<section id="section-video">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container p-5 text-center">
+          <a  class="video" href="" data-video="https://www.youtube.com/embed/HnwsG9a5riA" data-toggle="modal" data-target="#myModal">
+            <i class="fas fa-play"></i>
+          </a>
+          <h1>See What We Do</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+      </div>  
+    </div>
+  </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>    
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+// recibimos el año actual
+  $('#year').text(new Date().getFullYear());
+
+// carousel
+$('.carousel').carousel({
+  interval: 2000,
+  pause: 'hover'
+})
+
+
+// Lightbox Init
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
+// Video Play
+$(function () {
+// Auto play modal video
+$(".video").click(function () {
+  var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+ $(theModal + ' iframe').attr('src', videoSRCauto);
+ $(theModal + ' button.close').click(function () {
+ $(theModal + ' iframe').attr('src', videoSRC);
+    });
+  });
+});
+
+  
+
+</script>
 </body>
 </html>
