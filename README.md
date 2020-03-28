@@ -11,6 +11,9 @@
 - https://cheatography.com/kemmojoo/cheat-sheets/bootstrap-v4/
 - https://cheatsheet.kursbootstrap.pl/
 
+## Tools
+- https://ashleydw.github.io/lightbox/
+- https://kenwheeler.github.io/slick/ -- - https://cdnjs.com/libraries/slick-carousel
 
 ## Tutorial
 - https://www.w3schools.com/bootstrap4/
