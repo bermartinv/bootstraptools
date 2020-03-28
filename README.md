@@ -13,6 +13,7 @@
 
 ## Tools
 - https://ashleydw.github.io/lightbox/
+- https://kenwheeler.github.io/slick/ (slide)
 
 ## Tutorial
 - https://www.w3schools.com/bootstrap4/
