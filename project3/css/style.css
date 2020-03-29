@@ -98,3 +98,11 @@ i.fa-play {
 .about-img {
     margin-top: -50px;
 }
+
+a[data-toggle=collapse]{
+    color: #fff;
+}
+
+a[data-toggle=collapse]:hover{
+    color: #000;
+}
