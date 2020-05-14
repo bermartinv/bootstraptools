@@ -14,6 +14,7 @@
 ## Tools
 - https://ashleydw.github.io/lightbox/
 - https://kenwheeler.github.io/slick/ -- - https://cdnjs.com/libraries/slick-carousel
+- editor https://ckeditor.com/
 
 ## Tutorial
 - https://www.w3schools.com/bootstrap4/
